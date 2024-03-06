@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+
+header{
+    width: 100%;
+    background: url(../img/bg-header.png);
+    background-size: cover;
+    height: 100vh;
+}
+.checkbox{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    font-size: 22px;
+    width: 30rem;
+}
+.en{
+    color: white;
+    margin: 0;
+}
+.es{
+    color: yellow;
+    margin: 0;
+}
+#check{
+    position: relative;
+    width: 50px;
+}
+#check::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 25px;
+}
+#check::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+#check:checked::after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+#check:checked::before{
+    background: #00a1ff;
+}
+
+header nav{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+header nav ul li a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 12px 30px;
+}
+header nav ul li a:hover {
+    border: 2px solid white;
+}
+header #hero{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 180px;
+}
+header #hero h1{
+    color: yellow;
+    font-size: 60px;
+    margin: 0;
+}
+header #hero h2{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+header #hero a{
+    background: yellow;
+    padding: 12px 40px;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 8px;
+    color: grey;
+    transition: .5s;
+}
+header #hero a:hover{
+    padding: 12px 60px;
+    border-radius: 0;
+    background: white;
+}
+
+/*SECCIÓN PLANES*/
+
+
+#planes{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: white;
+
+}
+
+#planes .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#planes h2{
+    font-size: 50px;
+
+}
+
+#planes p{
+    font-size: 20px;
+
+}
+
+#planes .fila{
+    
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+
+#planes .fila .card{
+    
+    position: relative;
+
+    
+
+}
+
+
+#planes .fila .card h3{
+    color: yellow;
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right:0;
+   
+}
+
+
+
+/* SECCIÓN DESTINOS*/
+
+#destinos{
+    background: url(../img/bg-destinos.png);
+    width: 100%;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+#destinos .container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    
+}
+
+
+#destinos h2{
+    color: yellow;
+    font-size: 50px;
+}
+
+
+#destinos h3{
+    font-size: 30px;
+    color: white;
+}
+
+#destinos .fila{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+
+/* SECCIÓN CONTACTO */
+
+#contacto{
+    background: #474747;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#contacto .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+#contacto h2{
+    font-size: 50px;
+    color: white;
+}
+
+#contacto p{
+    font-size: 20px;
+    color: white;
+}
+
+#contacto input{
+    padding: 8px 15px;
+    font-size: 20px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 4%;
+}
+
+#contacto select{
+    padding: 9px 15px;
+    font-size: 20px;
+    width: 332px;
+    margin: 20px;
+    border-radius: 4%;
+}
+
+#contacto button{
+    font-size: 20px;
+    padding: 10px 30px;
+    background: rgb(230, 230, 25);
+    border-radius: 4%;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+footer{
+    background: black;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
